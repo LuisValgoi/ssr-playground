@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/Link";
+import Link from "next/link";
 
 const List = (props) => <ul style={{ listStyleType: "none", display: "inline" }}>{props.children}</ul>;
 
