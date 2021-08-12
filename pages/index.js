@@ -35,7 +35,6 @@ const Home = ({ repositories }) => {
 export async function getServerSideProps() {
   const res = await fetch("https://api.github.com/users/luisvalgoi/repos");
   const repositories = await res.json();
-  console.log(repositories);
   return {
     props: {
       repositories,
